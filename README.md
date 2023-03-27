@@ -3,6 +3,9 @@
 
 ## Docker
 
+This skelton Docker Development and Production for SvelteKit using `Javascript` if you prefer using `Typescipt` you can check this repo
+[sveltekit-ts-docker](https://github.com/adityadees/sveltekit-ts-docker)
+
 ### Docker Dev and Prod
 - If you run docker dev, this action same like `npm run dev`
 - If you run docker prod, this action same like `npm run build`

@@ -1,0 +1,21 @@
+version: "3.8"
+services:
+  sveltekit-js-static:
+    image: sveltekit-js-static-build
+    restart: on-failure
+    build:
+      context: .
+      dockerfile: Dockerfile.prod
+      target: deploy-static-svelte
+    ports:
+      - 5002:80
+
+  sveltekit-js-node:
+    image: sveltekit-js-node-build
+    restart: on-failure
+    build:
+      context: .
+      dockerfile: Dockerfile.prod
+      target: deploy-node-svelte
+    ports:
+      - 5003:3000
